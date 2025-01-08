@@ -14,6 +14,5 @@ RUN airflow db init
 RUN airflow users create -e pubudu093@gmail.com -f pubudu -l lasith -p admin -r Admin -u admin
 RUN chmod 777 start.sh
 RUN apt update -y
-
 ENTRYPOINT [ "/bin/sh" ]
 CMD ["start.sh"]
